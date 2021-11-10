@@ -1,0 +1,136 @@
+:root{
+    --background: #333333;
+    --container: rgb(252, 172, 0);
+    --selector: #D49100;
+    --border: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--border);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: 100;
+    text-align: center;
+}
+
+#container {
+    border: 3px solid  var(--border);
+    width: 90vw;
+    max-width: 750px;
+    height: 80vh;
+    background-color: var(--container);
+    border-radius:50px;
+}
+
+#containerBar {
+    display: flex;
+    align-items: center;
+}
+
+#selector {
+    background-color: var(--selector);
+    width: 170px;
+    height: 25px;
+    border-radius:20px;
+    border: 3px solid var(--border);
+}
+
+#selectorBar {
+    background-color: var(--background);
+    width: 10px;
+    height: 35px;
+    border-radius: 20px;
+    transform: translateY(-5px) translateX(10px);
+}
+
+#scoreSelector {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#carreContainer {
+    display: flex;
+}
+
+.carre {
+    width: 130px;
+    height: 130px;
+    background-color: var(--background);
+    border: 3px solid var(--border);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#generateBtn {
+    background: var(--background);
+    border: 3px solid var(--border);
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    color: var(--border);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media(max-width: 780px) {
+    body {
+        background-color: red;
+    }
+
+    #carreContainer {
+        display: flex;
+    }
+    
+    .carre {
+        width: 100px;
+        height: 100px;
+        background-color: var(--background);
+        border: 3px solid var(--border);
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+}
+
+
+@media(max-width: 600px) {
+
+    .carre {
+        width: 50px;
+        height: 50px;
+        font-style: 15px;
+    }
+}
+
+@media(max-height: 500px) {
+    .carre {
+        width: 80px;
+        height: 80px;
+    }
+
+    #generateBtn {
+        width: 125px;
+        height: 40px;
+    }
+}
