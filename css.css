@@ -41,6 +41,8 @@ body {
 #containerBar {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 210px;
 }
 
 #selector {
@@ -78,6 +80,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 #generateBtn {
